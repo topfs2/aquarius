@@ -7,6 +7,8 @@ camera:assign(Position(0, 0, 0))
 
 EventManager:emit(UpdateObserverEvent(camera))
 
+local i = 1
+
 function onMotionEvent(e)
     mouse.x = e.x * 32 * 0.5
     mouse.y = e.y * -18 * 0.5
