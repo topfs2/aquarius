@@ -66,7 +66,7 @@ function onClientSendMessageEvent(e)
 end
 
 function onClientConnectedEvent(e)
-    EventManager:emit(ClientSendMessageEvent(e.address, e.port, createSyncMessage()))
+    EventManager:emit(ClientSendMessageEvent(e.address, e.port, createSyncMessage(), true))
 
     local name = "player-" .. i
     i = i + 1
